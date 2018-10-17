@@ -5,19 +5,23 @@
 
    <h2><p>Developpeur Junior </p></h2>
 
+
+
    
   </div>
+  	<div class="icons-social">
+			<a target="_blank" href="https://github.com/vitalj"><i class="fab fa-github"></i></a>
+			<a target="_blank" href="https://www.linkedin.com/in/jeremy-vital-dev/"><i class="fab fa-linkedin"></i></a>
+    </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<style>
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+.icons-social i {
+	font-size: 3em;
+  padding: 10px;
+  color: black;
 }
-</script>
+
+</style>
