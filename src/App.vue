@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/Project">Projet</router-link>
-
+      <ul>
+      <li>  <router-link to="/">Home</router-link> </li>
+    <li>   <router-link to="/about">About</router-link> </li>
+     <li>  <router-link to="/Project">Projet</router-link> </li>
+</ul>
     </div>
     <router-view/>
   </div>
@@ -17,17 +18,52 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-left: 20%; /* Same as the width of the sidenav */
+  padding: 0px 10px;
 }
 #nav {
-  padding: 30px;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(180, 179, 179);
+  overflow-x: hidden;
+  text-align: center;
+  padding-top: 16px;
+
+}
+
+#nav a:hover{
+    color: #f1f1f1;
+}
+
+
+#nav li {
+  background-color: rgb(180, 179, 179);
+ color: black; 
+ list-style: none; 
+
+
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #818181;
+  display: block;
+  width:100%;
+  text-align: center;
+
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #000000;
 }
+
 </style>
+<script>
+
+
+</script>
